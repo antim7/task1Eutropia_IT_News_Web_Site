@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create News</title>
+</head>
+<body>
+<form method="POST">
+    {csrf_token %}
+    <fieldset>
+        {{NewsForm | crispy}}
+    </fieldset>
+
+</form>
+
+</body>
+</html>
